@@ -1,6 +1,7 @@
 body{ background-color: lightblue;}
 .box-1{
 display: inline-block;
+top: 0%;
 position: absolute;
     height: 180px;
     width: 180px;
