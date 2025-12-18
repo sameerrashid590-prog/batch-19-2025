@@ -1,0 +1,55 @@
+body{ background-color: lightblue;}
+.box-1{
+display: inline-block;
+position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: red;
+animation-name: moveb;
+animation-duration: 2s;
+animation:moveb both ease-in-out 6s infinite;
+   
+}
+
+.box-2{
+    display: inline-block;
+position:absolute;
+left: calc( 100% - 180px );
+
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+    
+
+    animation-name: backward;
+animation-duration: 3s;
+animation:backward both ease-in-out 6s infinite;
+}
+
+
+@keyframes moveb
+{
+   from {
+    left: 0;
+    top: 0%;
+  }
+  to {
+    left: calc(50% - 180px);
+    top: 0%;
+  }
+}
+
+
+
+@keyframes backward
+{
+   from {
+    right: 0;
+    top: 0%;
+  }
+  to {
+    left: calc(50% - 180px);
+    top: 0%;
+  }
+}
+
